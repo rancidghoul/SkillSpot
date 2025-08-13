@@ -1,0 +1,20 @@
+{
+  "name": "skillplot",
+  "version": "1.0.0",
+  "description": "A modern portfolio and career tracking app that transforms resumes into interactive, visual experiences",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "test": "concurrently \"cd server && npm test\" \"cd client && npm test\""
+  },
+  "keywords": ["resume", "portfolio", "career", "visualization", "skills"],
+  "author": "SkillPlot Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
